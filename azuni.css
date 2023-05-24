@@ -4,6 +4,7 @@
 
 *{
     box-sizing: border-box;
+    width: 100vw;
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -23,12 +24,75 @@
     flex-direction: column;
     align-items: center;
 }
-
+#menu nav {
+    margin-bottom: 8px;
+}
 #menu a {
     text-decoration: none;
     color: black;
 }
+/* carrosel da pagina */
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
 
+#radio2:checked {
+    margin-left: -25%;
+}
+#radio3 {
+
+}
+#radio4 {
+
+}
+.slider {
+    margin: 0 auto;
+    width: 100vw;
+    max-height: 400px;
+    overflow: hidden;
+}
+.slides{
+    width: 400%;
+    max-height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+}
+.slide img {
+    width: 100vw;
+}
+
+.navegacao-manual {
+    position: absolute;
+    width: 100vw;
+    margin-top: -90px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    width: 10px;
+    border: 2px solid white;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 30px;
+}
+.manual-btn:hover{
+    background-color: white;
+}
+/* fim do carrosel da pagina */
 #principal {
     display: flex;
     flex-direction: column;
@@ -38,5 +102,4 @@
 
 #principal a {
     text-decoration: none;
-
 }
