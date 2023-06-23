@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    
-    
     <title>Azuni</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -14,22 +12,25 @@
 </head>
 <body>
     <header id="cabecalho">
-        <h1>Azuni</h1>
-    </header>
-    <span class="material-icons-outlined">
-        shopping_cart
-    </span>
-    <menu id="menu">
-        <span class="material-icons-outlined">
-            menu
+        <menu id="menu">
+            <span class="material-symbols-outlined" id="menu-hamburguer">
+                menu
+            </span>
+            <div id="menu-opcoes">
+                <nav><a href="#">Início</a></nav>
+                <nav><a href="#">Produtos</a></nav>
+                <nav><a href="#">Sobre Nós</a></nav>
+                <nav><a href="#">Blog</a></nav>
+                <nav><a href="#">Promoções</a></nav>
+                <nav><a href="#">Contato</a></nav>
+            </div>
+        </menu>
+        <img id="logo" src="./src/imagens/logo sem fundo.png" alt="Logo da Azuni">
+        <span class="material-symbols-outlined" id="carrinho">
+            shopping_cart
         </span>
-        <nav><a href="#">Opção 1</a></nav>
-        <nav><a href="#">Opção 2</a></nav>
-        <nav><a href="#">Opção 3</a></nav>
-        <nav><a href="#">Opção 4</a></nav>
-        <nav><a href="#">Opção 5</a></nav>
-        <nav><a href="#">Opção 6</a></nav>
-    </menu>
+    </header>
+    
     
     <div class="slider">
         <div class="slides">
@@ -78,11 +79,79 @@
             <label for="radio4" class="manual-btn"></label>
         </div>
     </div>
-    <main id="principal">
-        <div><a href="#">Pulseiras</a></div>
-        <div><a href="#">Coláres</a></div>
-        <div><a href="#">Brincos</a></div>
-        <section>
+
+
+    <main id="principal"></main>
+        <div class="slider-info">
+            <div class="slides-info">
+                <!-- radio buttom -->
+                <input type="radio" name="radio-btn-info" id="radio5" checked>
+                <input type="radio" name="radio-btn-info" id="radio6">
+                <input type="radio" name="radio-btn-info" id="radio7">
+                <input type="radio" name="radio-btn-info" id="radio8">
+                <!-- fim radio buttom -->
+
+                <!-- imagens do slide -->
+
+                <!-- Parte Slides de Info -->
+                <div class="slide-info first" id="slide05">
+                    <div>
+                        <span id="envio-icone" class="material-symbols-outlined">
+                            box
+                        </span>
+                        <p>Enviamos para todo o Brasil</p>
+                    </div>
+                </div>
+                <div class="slide-info" id="slide06">
+                    <div>
+                        <span id="garantia-icone" class="material-symbols-outlined">
+                            workspace_premium
+                        </span>
+                        <p>Garantia vitalícia na cor do metal</p>
+                    </div>
+                </div>
+                <div class="slide-info" id="slide07">
+                    <div>
+                        <span id="credito-icone" class="material-symbols-outlined">
+                            credit_card
+                        </span>
+                        <p>Parcele em até 3x sem juros em compras acima de R$60,00</p>
+                    </div>
+                </div>
+                <div class="slide-info" id="slide08">
+                    <div>
+                        <span id="click-icone" class="material-symbols-outlined">
+                            left_click
+                        </span>
+                        <p>Acesse o nosso blog no menu e descubra mais sobre o aço inoxidável</p>
+                    </div>
+                </div>
+                <!-- fim das imagens do slide -->
+
+                <!-- navegação automática -->  
+                <div class="navigation-auto-info">
+                    <div class="auto-btn5">
+                    </div>
+                    <div class="auto-btn6">
+                    
+                    </div>
+                    <div class="auto-btn7">
+                    
+                    </div>
+                    <div class="auto-btn8">
+                    
+                    </div>
+                </div>
+            </div>
+
+            <div class="navegacao-manual-info">
+                <label for="radio5" class="manual-btn-info"></label>
+                <label for="radio6" class="manual-btn-info"></label>
+                <label for="radio7" class="manual-btn-info"></label>
+                <label for="radio8" class="manual-btn-info"></label>
+            </div>
+        </div>
+        <section id="destaques">
             <h2>Destaques</h2>
 
         </section>
@@ -101,5 +170,6 @@
         <span>Facebook</span>
     </footer>
     <script src="carrosel.js"></script>
+    <script src="menu.js"></script>
 </body>
 </html>
