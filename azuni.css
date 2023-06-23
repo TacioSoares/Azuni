@@ -25,11 +25,14 @@
     text-align: center;
 }
 #menu-hamburguer {
+    display: inline;
+    width: 30px;
     position: absolute;
     top: 60px;
     transition: 0.8s;
 }
 .material-symbols-outlined {
+    display: inline;
     text-align: left;
     cursor: pointer;
     color: #089B9B;
