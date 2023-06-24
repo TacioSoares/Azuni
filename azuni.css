@@ -28,7 +28,7 @@
     display: inline;
     width: 30px;
     position: absolute;
-    top: 60px;
+    top: 12%;
     transition: 0.8s;
 }
 .material-symbols-outlined {
@@ -80,7 +80,7 @@
 }
 
 .navigation-auto div{
-    border: 2px solid #E0B572;
+    border: 2px solid white;
     width: 10px;
     padding: 5px;
     cursor: pointer;
@@ -90,7 +90,7 @@
 .navigation-auto{
     position: absolute;
     width: 100vw;
-    margin-top: 214px;
+    top: 79.2%;
     display: flex;
     justify-content: center;
     left: 14.8px;
@@ -142,7 +142,7 @@
 .navegacao-manual {
     position: absolute;
     width: 100vw;
-    top: 436px;
+    top: 79.2%;
     display: flex;
     justify-content: center;
 }
@@ -212,7 +212,7 @@
 .navigation-auto-info{
     position: absolute;
     width: 100vw;
-    margin-top: 214px;
+    top: 132.3%;
     display: flex;
     justify-content: center;
     left: 14.8px;
@@ -273,7 +273,7 @@
 .navegacao-manual-info {
     position: absolute;
     width: 100vw;
-    top: 729px;
+    top: 132.3%;
     display: flex;
     justify-content: center;
 }
@@ -308,5 +308,5 @@
 /* parte dos destaques */
 
 #destaques {
-    margin-top: 100px;
+    margin-top: 35vw;
 }
