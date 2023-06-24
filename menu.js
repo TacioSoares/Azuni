@@ -12,3 +12,15 @@ menuHamburguer.addEventListener('click', () => {
         menuOpcoes.style.left = '0px'
     )    
 })
+
+document.addEventListener('touchmove', e =>{
+    /* document.addEventListener('touchend', e =>{ */
+
+        if(e.changedTouches[0].screenX < 1045) {
+            console.log('Avançou a tela')
+        }
+        if(e.changedTouches[0].screenX > 1170) {
+            console.log('Voltou a tela')
+        }
+    /* }) */
+})
