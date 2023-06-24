@@ -64,6 +64,25 @@
     font-weight: bold;
     color: #E0B572;
 }
+
+/* Testando carrosel da biblioteca */
+/* ------------------------------------------------------------ */
+
+
+.c-carousel__slides {
+    height: 400px;
+    width: 100vw;
+}
+.c-carousel__slide {
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    font-size: 5em;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+
 /* carrosel da pagina */
 #radio1:checked ~ .first{
     margin-left: 0;
@@ -123,7 +142,6 @@
     justify-content: flex-start;
     align-items: center;
     width: 400%;
-    max-height: 400px;
     display: flex;
 }
 
@@ -138,6 +156,7 @@
 }
 .slide img {
     width: 100vw;
+    height: 100%;
 }
 .navegacao-manual {
     position: absolute;

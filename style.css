@@ -1,0 +1,17 @@
+
+.c-carousel__slides {
+    max-width: 400px;
+    border: 1px solid purple;
+}
+
+.c-carousel__slide {
+    align-items: center;
+    color: green;
+    display: flex;
+    font-size: 5em;
+    justify-content: center;
+    padding: 5px;
+}
+.c-carousel__slide:not(:first-child) {
+    border-left: 1px solid purple;
+}
